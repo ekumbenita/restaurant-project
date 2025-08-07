@@ -108,5 +108,51 @@ form {
         display: flex;
         margin: 10px;
         padding: 20px;
+        border-radius: 50px;
+        border: 2px solid #e0e0e0;
+        color: #e0e0e0;
+        background: transparent;
+        outline: none;
+
+        ::placeholder{
+            color: #e0e0e0;
+            font-style: italic;
+            font-weight: bold;
+        }
+    }
+
+    select{
+        width: 50%;
+        height: 60px;
+        display: flex;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 50px;
+        border: 2px solid #e0e0e0;
+        color: #e0e0e0;
+        background: transparent;
+        outline: none;
+    }
+
+    button{
+        width: 50%;
+        height: 60px;
+        display: flex;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 50px;
+        border: 2px solid #e0e0e0;
+        color: #e0e0e0;
+        background: transparent;
+        outline: none;
+        justify-content: center;
+
+        &:hover{
+            color: rgb(206, 143, 25);
+            background: #e0e0e0;
+            cursor: pointer;
+            transition: .9s ease-in-out;
+            font-weight: 600;
+        }
     }
 }
