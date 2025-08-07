@@ -92,73 +92,48 @@ nav .srch {
   }
 }
 
-form {
-    width: 95vw;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+
+@media (max-width: 720px) {
+  body{
+    color: #e0e0e0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/pic\ 14.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  nav {
+    padding: 20px;
+  }
+
+  nav .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  nav .links {
+    display: none;
+  }
+
+  nav .srch {
+    display: none;
+  }
+
+  nav #menu {
     display: block;
+    gap: 20px;
+    width: 70px;
+    height: 60px auto;
+    margin-left: 60px;
 
-    input{
-        width: 50%;
-        height: 60px;
-        display: flex;
-        margin: 10px;
-        padding: 20px;
-        border-radius: 50px;
-        border: 2px solid #e0e0e0;
-        color: #e0e0e0;
-        background: transparent;
-        outline: none;
-
-        ::placeholder{
-            color: #e0e0e0;
-            font-style: italic;
-            font-weight: bold;
-        }
+    span {
+      width: 40px;
+      height: 5px;
+      margin: 8px;
+      background: #e0e0e0;
+      display: block;
     }
-
-    select{
-        width: 50%;
-        height: 60px;
-        display: flex;
-        margin: 10px;
-        padding: 20px;
-        border-radius: 50px;
-        border: 2px solid #e0e0e0;
-        color: #e0e0e0;
-        background: transparent;
-        outline: none;
-
-        option{
-            color: #000;
-            border-radius: 8px;
-            background: transparent;
-        }
-    }
-
-    button{
-        width: 50%;
-        height: 60px;
-        display: flex;
-        margin: 10px;
-        padding: 20px;
-        border-radius: 50px;
-        border: 2px solid #e0e0e0;
-        color: #e0e0e0;
-        background: transparent;
-        outline: none;
-        justify-content: center;
-
-        &:hover{
-            color: rgb(206, 143, 25);
-            background: #e0e0e0;
-            cursor: pointer;
-            transition: .9s ease-in-out;
-            font-weight: 600;
-        }
-    }
+  }
 }
