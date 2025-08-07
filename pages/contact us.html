@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./order.css">
+    <title>JIC EVENTS | Contact Us</title>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <img src="../assets/logo.jpg" alt="page logo" />
+        <span>JIC EVENTS</span>
+      </div>
+      <div class="links">
+        <a href="../index.html">Home</a>
+        <a href="./about us.html">About Us</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./gallerry.html">Gallery</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact us.html">Contact Us</a>
+        <a href="./custom_order.html">Customer Order</a>
+      </div>
+      <div class="srch">
+        <div class="holder">
+          <input type="search" name="" id="" placeholder="Search...." />
+          <button type="button">Search</button>
+        </div>
+      </div>
+      <div id="menu" onclick="menu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <form action="" method="post">
+        <h2>
+            Contact <span style="color: #6593eb;">Us!</span>
+            <center><div class="underline"></div></center>
+        </h2>
+        <input type="email" placeholder="Email Address" required>
+        <input type="number" placeholder="Phone Number" min="9" required>
+        <input type="text" placeholder="Physical Address" required>
+
+        <button type="submit">Submit</button>
+
+        <div class="link">
+            <a href="mailto:jic1234@gmail.com"><i class="bi bi-google"></i></a>
+            <a href="https://facebook.com/JIC.com"><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+    </form>
+</body>
+<style>
+    .underline{
+        width: 80px;
+        height: 4px;
+        border-radius: 50px;
+        background: #6593eb;
+    }
+    .link{
+        width: 30%;
+        justify-content: space-between;
+        display: flex;
+        margin: 10px 0;
+
+        a{
+            text-decoration: none;
+            color: #e0e0e0;
+            font-size: 2rem;
+        }
+        i{
+            color: #e0e0e0;
+            &:hover{
+                color: #6593eb;
+                transition: .9s ease-in-out;
+            }
+        }
+    }
+</style>
+</html>
