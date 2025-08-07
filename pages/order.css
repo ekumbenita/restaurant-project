@@ -156,7 +156,7 @@ form {
         justify-content: center;
 
         &:hover{
-            color: rgb(206, 143, 25);
+            color: #6593eb;
             background: #e0e0e0;
             cursor: pointer;
             transition: .9s ease-in-out;
